@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.burger {
+    position: absolute;
+    right: 60px;
+    top: 35px;
+    cursor: pointer;
+}
+
+.line {
+    width: 20px;
+    height: 2px;
+    margin-bottom:4px;
+    background-color: rgb(14, 184, 245);
+    border-radius: 20px;
+}
+
+.logo {
+    padding: 20px 50px;
+    font-family: lobster;
+   
+}
+
+.tazo-logo {
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 77px;
+    width: 86%;
+    background-color: white;
+    left: 7%;
+    height: 0;
+    transition: 0.6s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+ ul {
+   display: grid;
+   margin-top: 25px;
+}
+
+li {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    height: 50px;
+    width: 85%;
+    color: aqua;
+    transition: 0.3s;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: rgb(229, 229, 229);
+}
+
+a{
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(36, 36, 35);
+    margin-left: 15px;
+}
+
+.nav-bar.active {
+height: 310px;
+opacity: 1;
+border-top: 3px rgb(58, 185, 240) solid;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    background-color:rgba(91, 32, 175, 0.809);
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+
+.content {
+    width: 90%;
+    margin: 70px auto;
+    display: grid;
+    gap: 50px;
+}
+
+.content-proj {
+    box-shadow: rgba(71, 71, 71, 0.2) 0px 2px 8px 0px;
+    position: relative;
+}
+
+.content-proj-img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content-proj-name {
+    padding-left: 20px;
+    padding-top: 33px;
+    font-size:30px
+}
+
+.content-proj-time {
+    padding-left: 20px;
+    font-size: 18px;
+    color: rgb(7, 200, 7);
+    letter-spacing: 1px;
+    padding-bottom: 35px;
+}
+
+.content-proj:hover .content-proj-img {
+    opacity: 0.1;
+}
+
+.plus-icon {
+    position: absolute;
+    top: 33%;
+    left: 47%;
+    width: 10%;
+    display: none;
+    transition: 0.2s;
+}
+
+.content-proj:hover .plus-icon {
+    display: block;
+    opacity: 1;
+}
+
+.last {
+    width: 100%;
+    background-color: rgb(63, 61, 61);
+     color: white;
+     margin-top: 100px;
+}
+
+.last-phone-div {
+    display: flex;
+    padding-top: 50px;
+    margin-left: 4%;
+}
+
+.last-phone-img {
+    width: 30px;
+    height: 5%;
+    color: white;
+    
+}
+
+.last-phone-number{
+    margin-left: 5%;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.last-email-div {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 4%;
+}
+
+.last-email-text {
+font-size: 20px;
+margin-left: 4%;
+}
+
+.last-email-img{
+    width: 30px;
+    height: 30px;
+}
+
+.last-location-div {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 4%;
+}
+
+.last-location-img {
+    width: 30px;
+    height: 30px;
+}
+
+.last-location-text {
+    font-size: 20px;
+    margin-left: 4%;
+}
+
+.last-second {
+    margin-top: 40px;
+    display: flex;
+    margin-left: 35%;
+}
+
+.facebook{
+    width: 30px;
+}
+
+.instagram {
+    width: 30px;
+    margin-left: 30px;
+}
+
+.twitter {
+    width: 30px;
+    margin-left: 30px;
+}
+
+.last-last {
+    padding-bottom: 30px;
+    margin-top: 50px;
+    font-size: 9px;
+    text-align: center;
+    width: 100%;
+}
+
+.K {
+    position: absolute;
+    right:30%;
+    top: 440px;
+    
+}
+
+
+@media only screen and (min-width: 780px) {
+    
+    .last-phone-div {
+        margin-left: 0;
+    }
+
+    .last-email-div {
+        margin-left: 0;
+    }
+
+    .last-location-div {
+        margin-left: 0;
+    }
+
+    .last-second {
+        margin-left: 40%;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 976px) {
+    .tazoze {
+       padding-top: 200px;
+       
+    }
+   
+    .video-background {
+       padding-bottom: 200px;
+    }
+   
+    .burger {
+       display: none;
+    }
+   
+    header {
+       position: fixed;
+       z-index: 1;
+    }
+   
+    .nav-bar {
+       top: 0;
+       height: 70px;
+       position: relative;
+       margin-right: 6%;
+       
+    }
+   
+    ul{
+       display: flex;
+       margin-top: 17px;
+    }
+   
+    li{
+       border-radius: 20px;
+       border: 0px;
+       width: 130px;
+       text-align: center;
+       margin: 0;
+    }
+
+   
+   
+    a{
+       margin-left: 0;
+    }
+   
+    li:hover {
+       background-color: rgba(226, 59, 226, 0.2);
+    }
+   
+    li:hover a{
+       color:white ;
+    }
+   
+    .filler {
+       height: 80px;
+    }
+    .offer{
+       font-size: 70px;
+       width: 100%;
+    }
+    .offer-p {
+       font-size: 40px;
+    }
+   
+    .content {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+   
+    .last-first {
+       display: flex;
+    }
+   
+    .last-phone-img{
+       height: 30px;
+    }
+   
+    .last-phone-number {
+       margin-top: 3px;
+       margin-left: 20px;
+    }
+    
+    .last-email-div {
+       margin-top: 53px;
+    }
+   
+    .last-email-text {
+       margin-left: 20px;
+       margin-top: 4px;
+    }
+   
+    .last-location-div {
+       margin-top: 53px;
+    }
+   
+    
+   
+    .last-first {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .content-proj-name {
+        font-size: 22px;
+    }
+
+    .plus-icon {
+        left: 46%;
+        top: 27%;
+    }
+
+    .projects1 {
+        background-color: rgba(194, 42, 184, 0.623);
+        transition: 0.5s;
+    }
+    .projects1 a{
+        color: white;
+    }
+   
+    ul {
+        position: absolute;
+        right: 0;
+    }
+
+   }
+
+   @media only screen and (min-width: 1100px) {
+    a {
+        letter-spacing: 1px;
+    }
+    li {
+        width: 150px;
+    }
+    .nav-bar {
+        margin-right: 8%;
+    }
+    .last-first {
+        margin-left: 6%;
+    }
+    .last-second {
+        margin-left: 45%;
+    }
+   }
+
+
+   @media only screen and (min-width: 1300px) {
+
+    a {
+        letter-spacing: 2px;
+    }
+    li {
+        width: 160px;
+    }
+    
+    .last-first {
+        margin-left: 7%;
+    }
+    .last-second {
+        margin-left: 47%;
+    }
+    .content {
+        width: 70%;
+    }
+   }
+
+   @media only screen and (min-width: 1500px) {
+    a {
+        letter-spacing: 3px;
+    }
+    li {
+        width: 170px;
+    }
+    
+    .last-first {
+        margin-left: 8%;
+    }
+    .content {
+        width: 50%;
+    }
+   }
+
+
+
