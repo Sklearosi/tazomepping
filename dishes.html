@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dishes.css">
+</head>
+<body>
+    <div class="before-header">
+        <div class="before-location">
+            <img src="/images/location.png" alt="" class="before-location-img">
+            <h1 class="before-location-text">52 Sulkhan Tsintsadze</h1>
+        </div>
+        <div class="before-infos">
+            <div class="before-phone">
+                    <img src="/images/phone1.png" alt="" class="before-phone-img">
+                    <h1 class="before-phone-text">+995 555 599 747</h1>
+            </div>
+            <div class="before-email">
+                <img class="before-email-img" src="/images/email.png" alt="">
+            <h1 class="before-email-text">giogi.chanturidze.2000@gmail.com</h1>
+            </div>
+            <div class="before-socials">
+                <img src="/images/facebook.png" alt="" class="before-socials-img1">
+                <img src="/images/instagram.png" alt="" class="before-socials-img2">
+            </div>
+        </div>
+        </div>
+    <header>
+        <div class="logo" onclick="homeBtn()">
+        <h1 class="logo-text">Eat Together</h1>
+        <h4 class="slogan">Exclusive Dishes</h4>
+    </div>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <div class="starting">
+        <div class="logo option-logo">
+            <h1 class="logo-text">Eat Together</h1>
+            <h4 class="slogan">Exclusive Dishes</h4>
+        </div>
+        <h1 class="close">X</h1>
+    </div>
+        <ul class="option">
+            <li><a class="hover1" href="#" onclick="homeBtn()">Home</a></li>
+            <li><a class="hover2" href="#about-restaurant1" onclick="homeAboutBtn()">About Us</a></li>
+            <li><a class="hover3" href="#" onclick="menuBtn()">Menu</a> <img class="arrow" src="/images/arrow.png" alt=""></li>
+            <ul class="menu-list">
+                <li><a onclick="dishesBtn()" href="#">Dishes</a></li>
+                <li><a onclick="wineBtn()" href="#">Wine</a></li>
+                <li><a onclick="beveragesBtn()" href="#">Beverages</a></li>
+                <li><a onclick="dessertBtn()"   href="#">Dessert</a></li>
+            </ul>
+            <li><a class="hover4" onclick="contactBtn()" href="#">Contact</a></li>
+        </ul>
+        <img class="facebook" src="/images/facebook.png" alt="">
+        <img class="instagram" src="/images/instagram.png" alt="">
+        <div class="infos">
+            <img class="location-img" src="/images/location.png" alt="">
+            <h1 class="location-text">52 Sulkhan Tsintsadze</h1>
+            <div class="phone">
+            <img src="/images/phone1.png" alt="" class="phone-img">
+            <h1 class="phone-text">+995 555 599 747</h1>
+        </div>
+        <div class="email">
+        <img class="email-img" src="/images/email.png" alt="">
+        <h1 class="email-text">giogi.chanturidze.2000@gmail.com</h1>
+    </div>
+        </div>
+    </nav>
+    </header>
+    <div class="dishes-starting">
+        <h1>DISHES</h1>
+    </div>
+    <div class="appetizer-div">
+    <h1 class="appetizers">APPETIZERS</h1>
+</div>
+    <div class="appetizer-dishes">
+        <div class="appetizer-dishes-content">
+            <img src="/images/firstdish.jpg" alt="">
+            <h1>GEORGIAN PKHALI DIPS</h1>
+            <p class="cost">30 ₾</p>
+            <p class="about-dish">3 types of Pkhali dips with Mchadi (cornbread) crisps</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/seconddish.jpg" alt="">
+            <h1>GEORGIAN BRUSCHETTA WITH FIG AND RACHIAN LORI</h1>
+            <p class="cost price">15 ₾</p>
+            <p class="about-dish">Baguette bread , rachian ham, fig and sumach mixed strained matsoni</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/thirddish.jpg" alt="">
+            <h1>SALMON IN CORIANDER PESTO</h1>
+            <p class="cost">35 ₾</p>
+            <p class="about-dish">Fresh salmon saturated with coriander sauce</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/fourthdish.jpg" alt="">
+            <h1>SIBAS IN CORIANDER PESTO</h1>
+            <p class="cost">35 ₾</p>
+            <p class="about-dish">Fresh sibas saturated with coriander sauce</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/fifthdish.jpg" alt="">
+            <h1 class="minimize">MARINATED SALMON WITH WALNUT CREAM CHEESE</h1>
+            <p class="cost">30 ₾</p>
+            <p class="about-dish">Salmon marinated in brandy and citrus with cream cheese</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/sixthdish.jpg" alt="">
+            <h1>ASSORTMENT OF GEORGIAN ENDEMIC CHEESE</h1>
+            <p class="cost">45 ₾</p>
+            <p class="about-dish">Five types of Georgian endemic cheese, grizins, pepper jam, honey</p>
+        </div>
+    </div>
+    <div class="appetizer-div">
+        <h1 class="appetizers">SOUP</h1>
+    </div>
+    <div class="appetizer-dishes">
+        <div class="appetizer-dishes-content">
+            <img src="/images/soup1.jpg" alt="">
+            <h1>PUMPKIN SOUP</h1>
+            <p class="cost">17 ₾</p>
+            <p class="about-dish">Baked pumpkin soup with parmesan and signature sauce</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/soup2.jpg" alt="">
+            <h1>LEEK AND GARLIC CREAM SOUP WITH CHICKEN</h1>
+            <p class="cost price">24 ₾</p>
+            <p class="about-dish">Seasoned chicken with leek and garlic cream soup</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/soup3.jpg" alt="">
+            <h1>SU-CHO</h1>
+            <p class="cost">24 ₾</p>
+            <p class="about-dish">Our signature "Soup-kharcho" with beef, tomato sauce, Georgian spices, and fresh herbs</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/soup4.jpg" alt="">
+            <h1>SALMON SOUP</h1>
+            <p class="cost">34 ₾</p>
+            <p class="about-dish">Fresh salmon slices with asian spices, with a mix of coriander and mint. Garnish: strained matsoni, caviar, rye bread</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/soup5.jpg" alt="">
+            <h1 class="minimize">MUSHROOM CREAM SOUP</h1>
+            <p class="cost">24 ₾</p>
+            <p class="about-dish">Five types of mushroom cream soup with cream and parmesan cheese</p>
+        </div>
+        
+    </div>
+    <div class="appetizer-div">
+        <h1 class="appetizers">SALAD</h1>
+    </div>
+    <div class="appetizer-dishes">
+        <div class="appetizer-dishes-content">
+            <img src="/images/salad1.jpg" alt="">
+            <h1>BLANCHED TOMATOES SALAD</h1>
+            <p class="cost">18 ₾</p>
+            <p class="about-dish">Blanched tomato filled with squid, blueberries, nuts and feta cheese</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/salad2.jpg" alt="">
+            <h1>STRAINED MATSONI SALAD</h1>
+            <p class="cost price">20 ₾</p>
+            <p class="about-dish">Cottage cheese and strained matsoni rolled in sulguni cheese, arugal, cucumber and kaymak</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/salad3.jpg" alt="">
+            <h1>GRILLED VEGETABLES WITH STRAINED MATSONI</h1>
+            <p class="cost">25 ₾</p>
+            <p class="about-dish">Freshly grilled vegetables with garlic and herb</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/salad4.jpg" alt="">
+            <h1>SPINACH SALAD WITH BLUE CHEESE DRESSING</h1>
+            <p class="cost">20 ₾</p>
+            <p class="about-dish">Celery marinated in citrus, arugula, spinach, caramelized walnut and blue cheese</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/salad5.jpg" alt="">
+            <h1 class="minimize">VEGETARIAN SALAD</h1>
+            <p class="cost">20 ₾</p>
+            <p class="about-dish">Fried iceberg lettuce with Mukhudo balls, tahini, and honey sauce</p>
+        </div>
+    </div>
+    <div class="appetizer-div">
+        <h1 class="appetizers">PASTRY</h1>
+    </div>
+    <div class="appetizer-dishes">
+        <div class="appetizer-dishes-content">
+            <img src="/images/pastry1.jpg" alt="">
+            <h1>PUMPKIN KHACHAPURI WITH BERRY SAUCE</h1>
+            <p class="cost">22 ₾</p>
+            <p class="about-dish">Imeretian and Sulguni cheese placed in thin pumpkin dough with berry sauce</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/pastry2.jpg" alt="">
+            <h1>MELOGRANO</h1>
+            <p class="cost price">25 ₾</p>
+            <p class="about-dish">Baked pumpkin dough with Georgian mixed cheese and Pomegranate sauce</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/pastry3.jpg" alt="">
+            <h1>OUR BREAD WITH BASIL AND SULGUNI CHEESE</h1>
+            <p class="cost">30 ₾</p>
+            <p class="about-dish">hin sliced Sulguni cheese filled with strained Matsoni, green Adjika and cottage cheese; placed on top of baked crunchy dough. Cherry tomato on with basil/parsley/arugula</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/pastry4.jpg" alt="">
+            <h1>BOSTNEULITO</h1>
+            <p class="cost">25 ₾</p>
+            <p class="about-dish">Mixed vegetables with coriander oil and pesto placed inside our homemade dough. Baked in oven</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/pastry5.jpg" alt="">
+            <h1 class="minimize">GUDABREAD WITH ONION AND HONEY</h1>
+            <p class="cost">30 ₾</p>
+            <p class="about-dish">Tushetian Cottage cheese and Gouda cheese placed on the dough, enriched with chopped onion, Blue cheese and mozzarella</p>
+        </div>
+    </div>
+    <div class="appetizer-div">
+        <h1 class="appetizers">MAIN DISHES</h1>
+    </div>
+    <div class="appetizer-dishes">
+        <div class="appetizer-dishes-content">
+            <img src="/images/main1.jpg" alt="">
+            <h1>PUMPKIN RAVIOLI WITH NADUGI SAUCE</h1>
+            <p class="cost">22 ₾</p>
+            <p class="about-dish">Handmade pumpkin ravioli with cottage cheese and parmesan sauce</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main2.jpg" alt="">
+            <h1>RAVIOLI WITH MEAT</h1>
+            <p class="cost price">25 ₾</p>
+            <p class="about-dish">Handmade ravioli with beef and pork filling with parmesan, tomato and walnut</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main3.jpg" alt="">
+            <h1>PATOKHI</h1>
+            <p class="cost">26 ₾</p>
+            <p class="about-dish">Handmade pasta with signature tomato sauce, beef and pork. parmesan cheese</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main4.jpg" alt="">
+            <h1>PHISTIKI</h1>
+            <p class="cost">25 ₾</p>
+            <p class="about-dish">Handmade green pasta with pistachio sauce, cottage cheese and mint</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main5.jpg" alt="">
+            <h1 class="minimize">CAULIFLOWER WITH ASPARAGUS AND CARROT PUREE</h1>
+            <p class="cost">22 ₾</p>
+            <p class="about-dish">Roasted cauliflower with carrot puree, berry sauce,asparagus and caramelized almonds</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main6.jpg" alt="">
+            <h1 class="minimize">BEEF MEDALLION</h1>
+            <p class="cost">45 ₾</p>
+            <p class="about-dish">Beef medallion with celery bulb puree, parmesan balls, and in red-wine caramelized onion</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main7.jpg" alt="">
+            <h1 class="minimize">PORK MEDALLION</h1>
+            <p class="cost">45 ₾</p>
+            <p class="about-dish">Bacon-wrapped pork medallion with celery bulb puree and berry sauce</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main8.jpg" alt="">
+            <h1 class="minimize">KHARCHO WITH ELARJI DISK AND BAKED VEAL CHOPS</h1>
+            <p class="cost">50 ₾</p>
+            <p class="about-dish">Veal Kharcho with walnut sauce, garlic mousse and smoked Elarji disk</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main9.jpg" alt="">
+            <h1 class="minimize">SALMON STEAK</h1>
+            <p class="cost">65 ₾</p>
+            <p class="about-dish">Salmon with matsoni and brandy sauce with black rice</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main10.jpg" alt="">
+            <h1 class="minimize">EEL WITH TRUFFLE AND CHESTNUT PUREE</h1>
+            <p class="cost">80 ₾</p>
+            <p class="about-dish">Eel cooked in Asian spices with chestnut and truffle sauce and Unagi sauce</p>
+        </div>
+        <div class="appetizer-dishes-content">
+            <img src="/images/main11.jpg" alt="">
+            <h1 class="minimize">RE-SHEY</h1>
+            <p class="cost">30 ₾</p>
+            <p class="about-dish">Risotto rice with beef, white wine and parmesan</p>
+        </div>
+    </div>
+    <div class="last">
+        <div class="first-last">
+            <h1>ADDRESS</h1>
+            <p>52 Sulkhan Tsintsadze St</p>
+        </div>
+        <div class="second-last">
+            <h1>Reservation</h1>
+            <p>Call Us +995555599747</p>
+            <p>Email: giorgi.chanturidze.2000@gmail.com</p>
+        </div>
+        <div class="last-last">
+            <h1>OPENING HOURS</h1>
+            <p>Every day 12:00 to 23:00 </p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
